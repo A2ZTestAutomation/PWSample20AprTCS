@@ -1,0 +1,22 @@
+{
+  "name": "pwsample20aprtcs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui": "npx playwright test --ui",
+    "headed": "npx playwright test --headed dropDown.spec.ts",
+    "mobileChrome": "npx playwright test dropDown.spec.ts --project MobileChrome",
+    "retry": "npx playwright test chkBoxRadio.spec.ts --retries=2",
+    "retryAll": "npx playwright test --retries=2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.8.0"
+  }
+}

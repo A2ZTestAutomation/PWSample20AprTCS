@@ -1,0 +1,37 @@
+cheetah
+elephant
+lion
+[
+  '\n' +
+    '      \n' +
+    '        Cat\n' +
+    '      \n' +
+    '      \n' +
+    '        Cheetah\n' +
+    '      \n' +
+    '      \n' +
+    '        Deer\n' +
+    '      \n' +
+    '      \n' +
+    '        Dog\n' +
+    '      \n' +
+    '      \n' +
+    '        Elephant\n' +
+    '      \n' +
+    '      \n' +
+    '        Fox\n' +
+    '      \n' +
+    '      \n' +
+    '        Giraffe\n' +
+    '      \n' +
+    '      \n' +
+    '        Lion\n' +
+    '      \n' +
+    '      \n' +
+    '        Rabbit\n' +
+    '      \n' +
+    '      \n' +
+    '        Zebra\n' +
+    '      \n' +
+    '    '
+]
