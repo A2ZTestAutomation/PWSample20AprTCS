@@ -9,10 +9,10 @@ test('Assertions test.....', { tag: "@SmokeTest" }, async ({ page }) => {
     await expect(page).toHaveTitle(/Testing/)
     await expect(page).not.toHaveTitle(/Playwright/)
 
-    // await expect(page.locator('h6')).toBeVisible()
+    await expect(page.locator('h6')).toBeVisible()
     // If it fails, will not execute remaining steps
     //To continue with, use soft assert
-    await expect.soft(page.locator('h6')).toBeVisible()
+    // await expect.soft(page.locator('h6')).toBeVisible()
     const pageHeading = page.locator('h1')
     await expect(pageHeading).toBeVisible()
     console.log('PageHeader TExt....', await pageHeading.textContent())
