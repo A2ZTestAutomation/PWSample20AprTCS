@@ -1,14 +1,14 @@
 import { test, expect } from '@playwright/test'
-test.use(
-    {
-        screenshot: 'on',
-        trace: 'off'
-    }
-)
+// test.use(
+//     {
+//         screenshot: 'on',
+//         trace: 'off'
+//     }
+// )
 test.describe.only('Checkbox and Radio Button Tests', () => {
-    test.use({
-        viewport: { height: 800, width: 600 }
-    })
+    // test.use({
+    //     viewport: { height: 800, width: 600 }
+    // })
     test.beforeEach(async ({ page }) => {
         await page.goto('https://testautomationpractice.blogspot.com/')
     })
