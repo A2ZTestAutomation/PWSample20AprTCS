@@ -13,6 +13,8 @@ test.describe('Screenshot Tests', () => {
 
         const shadowDom = await page.locator('span#shadow_content').textContent()
         console.log('Shadow DOM text is.....' + shadowDom)
+        //Included for CR005
+        expect(shadowDom).toEqual('Mobiles')
     })
 
 

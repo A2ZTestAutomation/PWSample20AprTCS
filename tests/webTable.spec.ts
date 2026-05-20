@@ -10,7 +10,10 @@ test.describe('WebTable Tests', () => {
         const tableRows = await page.locator('table#table1 tbody tr').all()
         // const rowsCount = tableRows.all()
         console.log('No. of Rows....', tableRows.length)
+
         //Included for CR005
+
+
         expect(tableRows.length).toEqual(4)
         tableRows.forEach(async (rows) => {
             console.log('No. of columns...', await rows.locator('td').count())
