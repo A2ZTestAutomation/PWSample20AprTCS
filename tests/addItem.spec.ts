@@ -10,5 +10,7 @@ test('Add Item ', async ({ page }) => {
     const item = page.getByRole('link', { name: 'Samsung galaxy s6' })
     await expect(item).toBeVisible()
     await item.click()
-    await page.waitForTimeout(3000)
+    // await page.waitForTimeout(3000)
+    //Updated by Tester2
+    await page.waitForTimeout(5000)
 })
