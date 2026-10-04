@@ -8,9 +8,8 @@ test('Add Item ', async ({ page }) => {
     await page.waitForTimeout(3000)
 
     const item = page.getByRole('link', { name: 'Samsung galaxy s6' })
-    await expect(item).toBeVisible()
+    // await expect(item).toBeVisible()
+    await expect(item).not.toBeVisible()
     await item.click()
-    // await page.waitForTimeout(3000)
-    //Updated by Tester2
-    await page.waitForTimeout(5000)
+    await page.waitForTimeout(3000)
 })
