@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test'
+import fs from 'fs'
 
 const filePath1 = './screenshots/viewpage.png'
 const filePath2 = './screenshots/fullpage.png'
@@ -29,4 +30,16 @@ test('File Download Test', async ({ page, context }) => {
     ])
     await download.saveAs('./downloadedFiles/test_upload.txt')
     console.log('File downloaded path.....' + await download.path())
+
+    const fileName = './downloadedFiles/' + download.suggestedFilename()
+    await download.saveAs(fileName)
+
+    const fileExists = fs.existsSync(fileName)
+    expect(fileExists).toBe(true)
+
+    const fileContent = fs.readFileSync(fileName, 'utf-8')
+    console.log('File content is: ' + fileContent)
+
+
+
 })
