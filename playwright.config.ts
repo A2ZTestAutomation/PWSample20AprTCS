@@ -47,7 +47,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     video: 'on',
-    headless: false,
+    headless: true,
 
     // locale: 'en-US',
     // permissions: ['geolocation'],
